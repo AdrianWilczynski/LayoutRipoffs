@@ -1,0 +1,16 @@
+.middle {
+    display: grid;
+    width: $width-main;
+    max-width: $width-main-max;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1rem 1fr;
+    grid-template-areas: "guide gap social";
+}
+
+.guide {
+    grid-area: guide;
+}
+
+.social {
+    grid-area: social;
+}

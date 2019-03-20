@@ -1,0 +1,21 @@
+.guide {
+    background: white;
+    padding: 0.5em 1em;
+    color: $color-brown-dark;
+    margin-bottom: 1em;
+
+    &__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $ff-lato;
+        display: block;
+        padding: 0 0 0.4em;
+        border-bottom: 1px solid $color-grey-base;
+    }
+
+    &__authorship {
+        font-weight: 700;
+        font-size: 14px;
+    }
+}

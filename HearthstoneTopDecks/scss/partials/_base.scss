@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-grey-light;
+
+    font-family: $ff-open-sans;
+    font-size: $fs-regular;
+}
+
+a {
+    font-weight: 700;
+    color: $color-blue-base;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
