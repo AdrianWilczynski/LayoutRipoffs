@@ -6,3 +6,5 @@
 
 *.css
 *.css.map
+
+**/lib/**

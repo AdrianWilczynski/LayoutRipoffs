@@ -1,0 +1,66 @@
+.header {
+    padding: 0.5rem 0;
+    position: sticky;
+    background: white;
+    box-shadow: 0 1px 5px #c0c0c0;
+    top: 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        @include main-width;
+
+        @media (max-width: 55rem) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        font-size: 2em;
+        text-transform: uppercase;
+
+        i {
+            background: linear-gradient(#ff0000, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 1em 0.5em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__nav--primary {
+        font-size: 0.9rem;
+    }
+
+    &__nav--secondary ul li a {
+        color: $color-text-lighter;
+        text-align: center;
+        font-size: 0.7rem;
+
+        &:hover {
+            color: $color-text-active;
+        }
+
+        i {
+            display: block;
+            font-size: 2em;
+            margin-bottom: 0.2em;
+        }
+    }
+}
